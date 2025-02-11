@@ -1,0 +1,97 @@
+/* Full-Screen Background */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background: url('Img/Tech2.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+/* Chatbot Box */
+.main {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.3);
+    max-width: 500px;
+    width: 90%;
+}
+
+/* Image Styling */
+.image-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 6px 15px rgba(0, 162, 255, 0.6);
+}
+
+/* Headings */
+h1 {
+    color: #00b4d8;
+    font-size: 32px;
+}
+h3 {
+    color: #045c5a;
+    font-size: 32px;
+}
+
+/* Paragraph */
+p {
+    color: #a0a0a0;
+    font-size: 18px;
+}
+
+/* Input Section */
+.input {
+    margin-top: 30px;
+}
+
+/* Voice Button */
+button.talk {
+    background-color: #ff6f61;
+    color: white;
+    font-size: 22px;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+button.talk:hover {
+    background-color: #d9534f;
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main {
+        max-width: 95%;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+    
+    .image-container img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    button.talk {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+}
